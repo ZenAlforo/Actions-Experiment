@@ -9,13 +9,15 @@ on:
 
 jobs: 
   experimental-great:
+    env: 
+      My_ENV: "Samuel"
     runs-on: ubuntu-latest
     steps: 
       - name: Greet the user
         run: echo "Hello world"
       - name: Show directory before checkout
         run: ls -l
-      - name: Checouts our code
+      - name: Checkouts our code
         uses: actions/checkout@v2
       - name: Show directory after checkout
         run: ls -l
