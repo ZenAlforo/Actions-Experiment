@@ -10,7 +10,7 @@ on:
 jobs: 
   experimental-great:
     env: 
-      My_ENV: "Samuel"
+      MY_ENV: "Samuel"
     runs-on: ubuntu-latest
     steps: 
       - name: Greet the user
@@ -23,5 +23,5 @@ jobs:
         run: ls -l
       - name: Show env vars
         run: |
-          echo "Hello $My_Env"
+          echo "Hello $MY_ENV"
           echo "Hello $GITHUB_ACTOR"
